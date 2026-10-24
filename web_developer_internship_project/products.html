@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Product Catalog | Devendra Web Lab</title><link rel="stylesheet" href="css/style.css"><script src="js/main.js" defer></script></head>
+<body>
+<header class="site-header"><a class="logo" href="index.html"><span class="logo-mark">D</span> Devendra<span class="logo-light">Web Lab</span></a><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav" id="siteNav"><a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a class="active" href="products.html">Product Catalog</a><a href="weather.html">Weather App</a><a href="tasks.html">Notes & Tasks</a></nav></header>
+<main class="container page-main">
+<section class="page-intro"><p class="eyebrow">INTERACTIVE CATALOG</p><h1>Find your next <span class="gradient-text">favourite.</span></h1><p class="hero-text">Practice DOM manipulation with live search, category filters, and sorting.</p></section>
+<section class="catalog-controls panel"><label class="search-field">Search products<input id="productSearch" type="search" placeholder="Try “headphones” or “desk”"></label><label>Category<select id="categoryFilter"><option value="all">All categories</option><option value="Audio">Audio</option><option value="Workspace">Workspace</option><option value="Accessories">Accessories</option></select></label><label>Sort by<select id="sortProducts"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="name">Name: A–Z</option></select></label></section>
+<div class="catalog-meta"><p id="productCount" class="muted" aria-live="polite">Loading products…</p><button class="text-button" id="resetProducts" type="button">Reset filters ↺</button></div>
+<section class="product-grid" id="productGrid" aria-live="polite"></section>
+</main><footer class="site-footer"><div class="container footer-inner"><span>© <span data-year></span> Kolusu Devendra</span><span>Product Catalog · Search / Filter / Sort</span></div></footer>
+</body></html>

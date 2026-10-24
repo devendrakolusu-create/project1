@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Weather App | Devendra Web Lab</title><link rel="stylesheet" href="css/style.css"><script src="js/main.js" defer></script></head>
+<body>
+<header class="site-header"><a class="logo" href="index.html"><span class="logo-mark">D</span> Devendra<span class="logo-light">Web Lab</span></a><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav" id="siteNav"><a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="products.html">Product Catalog</a><a class="active" href="weather.html">Weather App</a><a href="tasks.html">Notes & Tasks</a></nav></header>
+<main class="container page-main weather-page">
+<section class="page-intro"><p class="eyebrow">FETCH API · LIVE DATA</p><h1>Weather, <span class="gradient-text">where you are.</span></h1><p class="hero-text">Search a city to fetch current conditions using free public geocoding and weather APIs.</p></section>
+<section class="weather-shell"><form id="weatherForm" class="weather-search"><label for="cityInput" class="sr-only">City name</label><input id="cityInput" name="city" required placeholder="Enter a city, e.g. Vijayawada" value="Vijayawada"><button class="btn btn-primary" type="submit">Get weather ↗</button></form><p id="weatherStatus" class="form-status" role="status">Ready when you are.</p><div id="weatherResult" class="weather-result"><div class="weather-empty"><span>☼</span><h2>Your forecast starts here</h2><p>Enter a city name above to check the latest available conditions.</p></div></div></section>
+<p class="small muted api-note">Data provided by Open-Meteo. An internet connection is required. If the request fails, check your connection and try again.</p>
+</main><footer class="site-footer"><div class="container footer-inner"><span>© <span data-year></span> Kolusu Devendra</span><span>Weather App · Fetch API</span></div></footer>
+</body></html>
